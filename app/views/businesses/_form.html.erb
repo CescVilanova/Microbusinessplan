@@ -1,0 +1,48 @@
+<%= form_for @business do |b| %>
+  
+  <%= b.label :name %>:
+  <%= b.text_field :name %>
+
+  <br />
+
+  <%= b.label :value %>:
+  <%= b.text_field :value %>
+
+  <br />
+
+  <%= b.label :market %>:
+  <%= b.text_field :market %>
+
+  <br />
+
+  <%= b.label :persona %>:
+  <%= b.text_field :persona %>
+
+  <br />
+
+  <%= b.label :business_model %>:
+  <%= b.text_field :business_model %>
+
+  <br />
+
+  <%= b.label :channels %>:
+  <%= b.text_field :channels %>
+
+  <br />
+
+  <%= b.label :validation %>:
+  <%= b.text_field :validation %>
+
+  <br />
+
+  <%= b.label :pretotype %>:
+  <%= b.text_field :pretotype %>
+
+  <br />
+  <br />
+
+  <div class="button">
+    <%= b.submit %>
+  </div>
+
+<% end %>

@@ -1,0 +1,30 @@
+<h1>
+  Your Business Model
+</h1>
+
+<ul>
+  <li>
+    <%= @business.name %>
+  </li>
+  <li>
+    <%= @business.market %>
+  </li>
+  <li>
+    <%= @business.persona %>
+  </li>
+    <li>
+    <%= @business.business_model %>
+  </li>
+    <li>
+    <%= @business.channels %>
+  </li>
+    <li>
+    <%= @business.validation %>
+  </li>
+    <li>
+    <%= @business.pretotype %>
+  </li>
+</ul>
+
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Delete', business_path(@business), method: :delete, data: {confirm: "Are you sure you want to delete this business idea?"} %>
